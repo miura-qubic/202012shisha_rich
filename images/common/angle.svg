@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.861" y1="0.85" x2="0.117" y2="0.19" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5351c0"/>
+      <stop offset="0.488" stop-color="#b54d6e"/>
+      <stop offset="1" stop-color="#f54c31"/>
+    </linearGradient>
+    <filter id="楕円形_2" x="0" y="0" width="75" height="75" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_31" data-name="グループ 31" transform="translate(-718.5 -6565.5)">
+    <g transform="matrix(1, 0, 0, 1, 718.5, 6565.5)" filter="url(#楕円形_2)">
+      <circle id="楕円形_2-2" data-name="楕円形 2" cx="30" cy="30" r="30" transform="translate(7.5 7.5)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="パス_1" data-name="パス 1" d="M164.138,5733.3l7.5,7.5-7.5,7.5" transform="translate(588.516 862.198)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>
