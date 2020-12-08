@@ -32,7 +32,7 @@ a{
 #wrapper{
 	width: 100%;
 	max-width: 1920px;
-	margin: 5.625rem auto 0;
+	margin: 0 auto;
 	height: auto;
 }
 section,
@@ -191,11 +191,16 @@ video{ width: 100%; }
 header{
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 50%;
+	max-width: 1920px;
 	width: 100%;
+	transform: translateX(-50%);
+	z-index: 50000;
+	transition: .3s;
+}
+header.active{
 	background: #fff;
 	box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.1);
-	z-index: 50000;
 }
 .header_in{
 	display: flex;
@@ -216,9 +221,14 @@ header{
 	padding: 0.5rem 1rem;
 	width: 10rem;
 	height: 5.625rem;
+	color: #fff;
 	transition: .3s cubic-bezier(.79,.01,.21,.96);
 }
-.header_in ul li a:hover{
+header.active .header_in ul li a{
+	color: #232320;
+}
+.header_in ul li a:hover,
+header.active .header_in ul li a:hover{
 	color: #fff;
 }
 .header_in ul li a::before{
@@ -260,9 +270,13 @@ footer .sns_wrap a{
 	color: #fff;
 	font-size: 2.5rem;
 	margin-right: 2.5rem;
+	transition: .3s;
 }
 footer .sns_wrap a:last-of-type{
 	margin-right: 0;
+}
+footer .sns_wrap a:hover{
+	color: #232320;
 }
 footer .copyright{
 	font-size: 0.7rem;

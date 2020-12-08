@@ -18,9 +18,18 @@ const tabletwidth = 1025;
 
 $(function () {
 	$("body").removeClass("preload");
-// JQueryの範囲
+	// JQueryの範囲
 
-
+	// ヘッダー追従
+	$(window).on('load scroll', function () {
+		if ($(window).scrollTop() > 200) {
+			$('header').addClass('active');
+			$('header .logo img').attr('src', './images/common/logo.png');
+		} else {
+			$('header').removeClass('active');
+			$('header .logo img').attr('src', './images/common/logo_w.png');
+		}
+	});
 
 
 
