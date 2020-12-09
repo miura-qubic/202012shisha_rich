@@ -33,6 +33,8 @@ $(function () {
 		}
 	});
 
-
+	$('.fadein').on('inview',function(){
+		$(this).addClass('active');
+	});
 
 });

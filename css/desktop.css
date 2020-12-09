@@ -186,6 +186,15 @@ video{ width: 100%; }
 	line-height: 1;
 	margin-right: 1rem;
 }
+.fadein{
+	opacity: 0;
+	transform: translateY(50px);
+}
+.fadein.active{
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 1s ease, transform 0.8s ease-out;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -517,14 +526,13 @@ footer .copyright{
 	color: #f53618;
 }
 .top04 .box .notice{
+	margin-top: 1.5rem;
+}
+.top04 .box .notice p{
 	font-size: 0.875rem;
 	line-height: 1.8;
-	margin-top: 1.5rem;
 	padding-left: 1em;
 	text-indent: -1em;
-}
-.top04 .box .notice + .notice{
-	margin-top: 0;
 }
 .top04 .btn{
 	margin-top: 2rem;
