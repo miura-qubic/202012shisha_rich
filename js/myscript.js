@@ -8,10 +8,12 @@ const tabletwidth = 1025;
 {
 	const openMenu = document.getElementById('menu_open');
 	const Nav = document.querySelector('header nav');
+	const overlay = document.getElementById('overlay');
 
 	openMenu.addEventListener('click', function () {
 		openMenu.classList.toggle('active');
 		Nav.classList.toggle('active');
+		overlay.classList.toggle('active');
 	});
 }
 
