@@ -112,7 +112,10 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.montserrat{ font-family: 'Montserrat', sans-serif; }
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
 .grd01{ background: linear-gradient(-45deg, #5351c0, #b54d6e, #f54c31); }
 video{ width: 100%; }
 .ttl_wrap{
@@ -742,8 +745,104 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact_contents ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.lower_mv_in{
+	position: absolute;
+	width: 100%;
+	opacity: .1;
+}
+.lower_mv .box{
+	width: 100%;
+	height: 20rem;
+	display: flex;
+	align-items: center;
+}
+.lower_mv .lower_ttl{
+	color: #fff;
+}
+.lower_mv .lower_ttl h1{
+	font-size: 3.125rem;
+	line-height: 1;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+.lower_mv .lower_ttl p{
+	font-size: 1rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ service02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.service02{
+	padding: 4rem 0;
+}
+.service02 .box{
+	margin-top: 4rem;
+}
+.service02 .copy{
+	color: #5351c0;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 2.4;
+}
+.service02 .item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 1rem;
+	padding: 1.5rem 3rem 1.5rem 1.5rem;
+	margin-top: 3rem;
+	background: #fff;
+}
+.service02 .item:first-of-type{
+	margin-top: 0;
+}
+.service02 .item .img{
+	width: 55%;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.service02 .item:nth-of-type(odd) .img{ order: 1; }
+.service02 .item:nth-of-type(even) .img{ order: 2; }
+.service02 .item .img img{
+	width: 100%;
+	height: auto;
+}
+.service02 .item .txt{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.service02 .item .txt{
+	width: 40%;
+}
+.service02 .item:nth-of-type(odd) .txt{ order: 2; }
+.service02 .item:nth-of-type(even) .txt{ order: 1; }
+.service02 .item .txt .icon{
+	width: 7.75rem;
+	height: 7.75rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -3.875rem;
+	margin-bottom: 1rem;
+}
+.service02 .item:first-of-type .txt .icon{
+	margin-top: 0;
+}
+.service02 .item .txt .icon img{
+	width: auto;
+	height: 5.5rem;
+}
+.service02 .item .txt h2{
+	font-size: 1.875rem;
+	margin-bottom: 0.75rem;
+}
+.service02 .item .txt p{
+	text-align: center;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
