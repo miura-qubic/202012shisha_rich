@@ -770,9 +770,13 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層MV ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.service01{ background: url(../images/service/mv.png) 80% center / 1920px auto no-repeat; }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層MV ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ service02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .service02{
-	padding: 4rem 0;
+	padding: 5rem 0;
 }
 .service02 .box{
 	margin-top: 4rem;
@@ -795,6 +799,9 @@ footer .copyright{
 }
 .service02 .item:first-of-type{
 	margin-top: 0;
+}
+.service02 .item:nth-of-type(even){
+	padding: 1.5rem 1.5rem 1.5rem 3rem;
 }
 .service02 .item .img{
 	width: 55%;
@@ -825,11 +832,7 @@ footer .copyright{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: -3.875rem;
 	margin-bottom: 1rem;
-}
-.service02 .item:first-of-type .txt .icon{
-	margin-top: 0;
 }
 .service02 .item .txt .icon img{
 	width: auto;
@@ -841,6 +844,57 @@ footer .copyright{
 }
 .service02 .item .txt p{
 	text-align: center;
+}
+.service02 .item .txt .recommend{
+	margin-top: 3rem;
+	width: 100%;
+}
+.service02 .item .txt .recommend th,
+.service02 .item .txt .recommend td{
+	font-size: 0.875rem;
+	padding: 0.75rem;
+}
+.service02 .item .txt .recommend th{
+	text-align: center;
+	color: #fff;
+	background: #5351c0;
+	border-top-left-radius: 0.6rem;
+	border-bottom-left-radius: 0.6rem;
+	width: 30%;
+}
+.service02 .item .txt .recommend td{
+	background:#edeeea;
+	border-top-right-radius: 0.6rem;
+	border-bottom-right-radius: 0.6rem;
+	width: 70%;
+}
+.service02 .item .txt .recommend td ul{
+	margin-left: 1.5rem;
+}
+.service02 .item .txt .recommend td li{
+	list-style-type: disc;
+}
+.service02 .notice_wrap{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+}
+.service02 .notice_wrap .notice_ttl,
+.service02 .notice_wrap .notice_contents{
+	border-top: solid 1px #000;
+	padding: 1rem;
+}
+.service02 .notice_wrap .notice_ttl{
+	width: 20%;
+}
+.service02 .notice_wrap .notice_ttl h3{
+	font-size: 1.25rem;
+}
+.service02 .notice_wrap .notice_contents{
+	width: 70%;
+}
+.service02 .notice_wrap .notice_contents p{
+	font-size: 0.875rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
