@@ -116,3 +116,33 @@
 	margin-top: 10rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact_contents ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ service02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.service02 .copy p{
+	font-size: 1.25rem;
+}
+.service02 .box{
+	max-width: 550px;
+	width: 100%;
+	margin: 4rem auto 0;
+}
+.service02 .item{
+	display: block;
+	padding: 1.5rem;
+}
+.service02 .item:nth-of-type(even){ padding: 1.5rem; }
+.service02 .item .img{
+	width: 100%;
+}
+.service02 .item .txt{
+	width: 100%;
+}
+.service02 .item .txt .icon{
+	width: 6.5rem;
+	height: 6.5rem;
+	margin-top: -3.25rem;
+}
+.service02 .item .txt .icon img{
+	height: 4.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */

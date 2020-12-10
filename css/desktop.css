@@ -241,10 +241,12 @@ header.active{
 	width: 9.5rem;
 	padding: 0.5rem 1rem;
 }
+.lower header .header_in ul li a,
 header.active .header_in ul li a{
 	color: #232320;
 }
 .header_in ul li a:hover,
+.lower .header_in ul li a:hover,
 header.active .header_in ul li a:hover{
 	color: #fff;
 }
@@ -757,6 +759,10 @@ footer .copyright{
 	align-items: center;
 }
 .lower_mv .lower_ttl{
+	color: #232320;
+	margin-top: 3rem;
+}
+.lower_mv .lower_ttl.white{
 	color: #fff;
 }
 .lower_mv .lower_ttl h1{
@@ -778,14 +784,14 @@ footer .copyright{
 .service02{
 	padding: 5rem 0;
 }
-.service02 .box{
-	margin-top: 4rem;
-}
 .service02 .copy p{
 	color: #5351c0;
 	font-size: 1.5rem;
 	text-align: center;
 	line-height: 2.4;
+}
+.service02 .box{
+	margin-top: 4rem;
 }
 .service02 .item{
 	display: flex;
@@ -819,8 +825,6 @@ footer .copyright{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-.service02 .item .txt{
 	width: 40%;
 }
 .service02 .item:nth-of-type(odd) .txt{ order: 2; }
@@ -891,7 +895,7 @@ footer .copyright{
 	font-size: 1.25rem;
 }
 .service02 .notice_wrap .notice_contents{
-	width: 70%;
+	width: 73%;
 }
 .service02 .notice_wrap .notice_contents p{
 	font-size: 0.875rem;
