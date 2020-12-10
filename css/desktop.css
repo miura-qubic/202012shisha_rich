@@ -782,6 +782,7 @@ footer .copyright{
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層MV ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .service01{ background: url(../images/service/mv.png) 80% center / 1920px auto no-repeat; }
 .faq01{ background: url(../images/faq/mv.png) 80% center / 1920px auto no-repeat; }
+.contact01{ background: url(../images/contact/mv.png) 80% center / 1920px auto no-repeat; }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層MV ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ service02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -973,6 +974,23 @@ footer .copyright{
 	padding: 1rem 3rem 1rem 4.75rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ faq02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ contact02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.contact02{
+	padding: 5rem 0 7rem;
+}
+.contact02 .box{
+	max-width: 1080px;
+	width: 100%;
+	margin: 0 auto;
+}
+.contact02 .copy p{
+	color: #5351c0;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 2.4;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
