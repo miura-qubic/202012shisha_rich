@@ -692,9 +692,6 @@ footer .copyright{
 	align-items: center;
 }
 .lower_mv .lower_ttl{
-	color: #232320;
-}
-.lower_mv .lower_ttl.white{
 	color: #fff;
 }
 .lower_mv .lower_ttl h1{
@@ -710,6 +707,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層MV ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .service01{ background: url(../images/service/mv.png) 80% center / cover no-repeat; }
+.faq01{ background: url(../images/faq/mv.png) 80% center / cover no-repeat; }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層MV ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ service02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -800,6 +798,12 @@ footer .copyright{
 .service02 .item .txt .recommend td li{
 	list-style-type: disc;
 }
+.service02 .btn_wrap .btn{
+	margin-top: 1rem;
+}
+.service02 .btn_wrap .btn:first-of-type{
+	margin-top: 0;
+}
 .service02 .notice_wrap{
 	margin-top: 2rem;
 }
@@ -820,8 +824,59 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-
-
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ faq02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.faq02{
+	padding: 2.5rem 0 4rem;
+}
+.faq02 .copy p{
+	color: #5351c0;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 2.4;
+}
+.faq02 .box{
+	margin-top: 2.5rem;
+}
+.faq02 .item{
+	background: #edeeea;
+	border-radius: 0.6rem;
+	margin-top: 1.5rem;
+}
+.faq02 .item:first-of-type{
+	margin-top: 0;
+}
+.faq02 .item .que,
+.faq02 .item .ans{
+	position: relative;
+}
+.faq02 .item .que{
+	font-size: 1rem;
+	border-bottom: 2px solid #e5e5e3;
+}
+.faq02 .item .ans{
+	font-size: 0.875rem;
+}
+.faq02 .item .que .faq_q,
+.faq02 .item .ans .faq_a{
+	position: absolute;
+	display: block;
+	font-size: 2rem;
+	font-weight: 500;
+	top: 0;
+}
+.faq02 .item .que .faq_q{
+	left: 0.9rem;
+	color: #f52100;
+}
+.faq02 .item .ans .faq_a{
+	left: 1.2rem;
+	color: #5351c0;
+}
+.faq02 .item .que p,
+.faq02 .item .ans p{
+	padding: 1rem 1rem 1rem 3.75rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ faq02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */

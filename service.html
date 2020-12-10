@@ -69,7 +69,7 @@
 						<li><a href="./service.html">SERVICE<span class="is_sp">サービス内容</span></a></li>
 						<li><a href="#">PRICE<span class="is_sp">料金プラン</span></a></li>
 						<li><a href="#">FLOW<span class="is_sp">ご利用の流れ</span></a></li>
-						<li><a href="#">FAQ<span class="is_sp">よくある質問</span></a></li>
+						<li><a href="./faq.html">FAQ<span class="is_sp">よくある質問</span></a></li>
 						<li><a href="#">CONTACT<span class="is_sp">お問い合わせ・ご予約</span></a></li>
 					</ul>
 					<a href="https://lin.ee/WKXymPl" target="_blank" rel="noopener" class="btn line white is_sp">
@@ -251,6 +251,15 @@
 						</div>
 					</div>
 
+					<div class="btn_wrap fadein">
+						<a href="./price.html" class="btn">
+							<p class="inner">料金はこちら</p>
+						</a>
+						<a href="https://lin.ee/WKXymPl" target="_blank" rel="noopener" class="btn line">
+							<p class="inner"><span><i class="fab fa-line"></i></span>LINEでご質問</p>
+						</a>
+					</div>
+
 					<div class="notice_wrap fadein">
 						<div class="notice_ttl">
 							<h3>ご注意</h3>
@@ -336,67 +345,7 @@
 		</footer>
 	</div>
 	<div id="overlay"></div>
-	<input type="hidden" name="pagename" value="lower">
 
-	<script>
-		window.onload = function () {
-			var w = $(window).width();
-			if (w <= 767) {
-				var swiper01 = new Swiper('.top02 .swiper-container', {
-					loop: true,
-					speed: 1000,
-					slidesPerView: 1,
-					spaceBetween: 20,
-					centeredSlides: true,
-					autoplay: {
-						delay: 8000,
-						disableOnInteraction: true
-					},
-					pagination: {
-						el: '.top02 .swiper-pagination',
-						type: 'bullets',
-						clickable: true
-					},
-					navigation: {
-						nextEl: '.top02 .swiper-button-next',
-						prevEl: '.top02 .swiper-button-prev',
-					}
-				});
-			}else{
-				if (swiper01) {
-					swiper01.destroy();
-					swiper01 = undefined;
-				}
-			}
-
-			var swiper02 = new Swiper('.top05 .box .swiper-container', {
-				loop: true,
-				speed: 1000,
-				slidesPerView: 3,
-				spaceBetween: 20,
-				centeredSlides: true,
-				autoplay: {
-					delay: 5000,
-					disableOnInteraction: true
-				},
-				breakpoints: {
-					767: {
-						slidesPerView: 1,
-						spaceBetween: 20,
-					},
-				},
-				pagination: {
-					el: '.top05 .box .swiper-pagination',
-					type: 'bullets',
-					clickable: true
-				},
-				navigation: {
-					nextEl: '.top05 .box .swiper-button-next',
-					prevEl: '.top05 .box .swiper-button-prev',
-				}
-			});
-		}
-	</script>
 
 	<!-- JS読み込み -->
 	<script type="text/javascript" src="./js/jquery-3.2.1.min.js" defer></script>

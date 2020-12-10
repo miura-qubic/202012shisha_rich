@@ -31,15 +31,21 @@ $(function () {
 
 // ヘッダー追従
 $(window).on('load scroll', function () {
-	if ($(window).scrollTop() > 200) {
-		$('header').addClass('active');
+	if(w > spwidth) {
+		if ($(window).scrollTop() > 200) {
+			$('header').addClass('active');
 			$('header .logo img').attr('src', './images/common/logo.png');
 		} else {
 			$('header').removeClass('active');
-			if(w > spwidth && $('input[name="pagename"]').val() == 'home'){
-				$('header .logo img').attr('src', './images/common/logo_w.png');
-			}else{
-				$('header .logo img').attr('src', './images/common/logo.png');
-			}
+			$('header .logo img').attr('src', './images/common/logo_w.png');
+		}
+	}else{
+		if ($(window).scrollTop() > 200) {
+			$('header').addClass('active');
+			$('header .logo img').attr('src', './images/common/logo.png');
+		} else {
+			$('header').removeClass('active');
+			$('header .logo img').attr('src', './images/common/logo.png');
+		}
 	}
 });
