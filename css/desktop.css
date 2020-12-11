@@ -922,6 +922,138 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ price02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.price02{
+	padding: 5rem 0 7rem;
+}
+.price02 .copy p{
+	color: #5351c0;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 2.4;
+}
+.price02 .box{
+	max-width: 980px;
+	width: 100%;
+	margin: 4rem auto 0;
+}
+.price02 .box_in .item{
+	background: #fff;
+	border-radius: 1rem;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-top: 3rem;
+}
+.price02 .box_in .item h4{
+	font-size: 1.25rem;
+	color: #fff;
+	background: #82b6ef;
+	text-align: center;
+	padding: 0.5rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+.price02 .box_in .item .txt{
+	padding: 2rem 0 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.price02 .box_in .item .txt .inner{
+	margin-top: 2rem;
+}
+.price02 .box_in .item .txt .inner:first-of-type{
+	margin-top: 0;
+}
+.price02 .box_in .item .txt p .price{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: 1rem;
+	color: #f53618;
+}
+.price02 .box_in .item .img_wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+.price02 .box_in .item .img_wrap .img{
+	width: 33.33%;
+	height: 15rem;
+}
+.price02 .box_in .item .img_wrap .img:last-of-type{
+	margin-right: 0;
+}
+.price02 .btn_wrap{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-top: 4rem;
+}
+.price02 .btn_wrap .btn{
+	margin-right: 2rem;
+}
+.price02 .btn_wrap .btn:last-of-type{
+	margin-right: 0;
+}
+.price02 .btn_wrap .btn.line .fig{
+	display: inline-block;
+	position: relative;
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	transition: .2s ease;
+	margin-bottom: 1rem;
+}
+.price02 .btn_wrap .btn.line .fig::before,
+.price02 .btn_wrap .btn.line .fig::after{
+	position: absolute;
+	content: '';
+	width: 2rem;
+	height: 2px;
+	top: 50%;
+}
+.price02 .btn_wrap .btn.line .fig::before{
+	background: #f52100;
+	left: -4rem;
+	transform: translateY(-50%) rotate(45deg);
+}
+.price02 .btn_wrap .btn.line .fig::after{
+	background: #5351c0;
+	right: -4rem;
+	transform: translateY(-50%) rotate(-45deg);
+}
+.price02 .btn_wrap .btn.line:hover .fig{
+	transform: translateY(4px);
+}
+.price02 .notice_wrap{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6rem;
+}
+.price02 .notice_wrap .notice_ttl,
+.price02 .notice_wrap .notice_contents{
+	border-top: solid 1px #000;
+	padding: 1rem;
+}
+.price02 .notice_wrap .notice_ttl{
+	width: 20%;
+}
+.price02 .notice_wrap .notice_ttl h3{
+	font-size: 1.25rem;
+}
+.price02 .notice_wrap .notice_contents{
+	width: 73%;
+}
+.price02 .notice_wrap .notice_contents p{
+	font-size: 0.875rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ price02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ flow02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .flow02{
 	padding: 5rem 0 7rem;
