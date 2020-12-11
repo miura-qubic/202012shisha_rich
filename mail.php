@@ -75,10 +75,10 @@ function funcContactAddress($name, $company, $email, $phone, $contact_type, $msg
   $content .= "後日、担当者よりご連絡させていただきます。\n\n";
   $content .= "--------------------------------\n\n";
   $content .= "Shisha Rich\n"; //社名
-  $content .= "【住所】  \n";
-  $content .= "【電話番号】 \n";
-  $content .= "【MAIL】 \n";
-  $content .= "【営業時間】 (土日祝除く)\n\n";
+  // $content .= "【住所】  \n";
+  // $content .= "【電話番号】 \n";
+  $content .= "【MAIL】 \n\n";
+  // $content .= "【営業時間】 (土日祝除く)\n\n";
   $content .= "--------------------------------\n";
 
 

@@ -154,10 +154,10 @@ video{ width: 100%; }
 }
 .btn.line .inner{
 	color: #fff;
-	background: var(--line);
+	background: #00B900;
 }
 .btn.line.white .inner{
-	color: var(--line);
+	color: #00B900;
 	background: #fff;
 }
 .btn.line .inner span{
@@ -436,6 +436,7 @@ footer .copyright{
 	justify-content: center;
 }
 .top03 .item .txt .icon{
+	position: relative;
 	width: 6rem;
 	height: 6rem;
 	border-radius: 50%;
@@ -677,7 +678,7 @@ footer .copyright{
 	margin-top: 0;
 }
 .contact_contents .btn_wrap .btn.line .inner{
-	color: var(--line);
+	color: #00B900;
 	background: #fff;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact_contents ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
@@ -756,6 +757,7 @@ footer .copyright{
 	justify-content: center;
 }
 .service02 .item .txt .icon{
+	position: relative;
 	width: 6rem;
 	height: 6rem;
 	border-radius: 50%;
@@ -1197,12 +1199,11 @@ footer .copyright{
 	margin: 2rem auto 0;
 }
 .contact02 .privacypolicy a{
-	margin-top: 0.5rem;
+	margin: 0.5rem 0 1.5rem;
 	text-decoration: underline;
 }
 .contact02 .privacypolicy .notice{
 	display: inline-block;
-	margin-top: 1.5rem;
 	text-align: left;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */

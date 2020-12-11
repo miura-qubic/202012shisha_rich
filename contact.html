@@ -37,10 +37,10 @@
 
 	<!-- CSS読み込み -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link rel="stylesheet" type="text/css" href="./css/desktop.css" media="screen and (min-width: 768px)">
-	<link rel="stylesheet" type="text/css" href="./css/tab.css"
+	<link rel="stylesheet" type="text/css" href="./css/desktop.css?20201211" media="screen and (min-width: 768px)">
+	<link rel="stylesheet" type="text/css" href="./css/tab.css?20201211"
 		media="screen and (min-width: 768px) and (max-width: 1025px)">
-	<link rel="stylesheet" type="text/css" href="./css/smart.css" media="screen and (max-width: 767px)">
+	<link rel="stylesheet" type="text/css" href="./css/smart.css?20201211" media="screen and (max-width: 767px)">
 	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 	<!-- CSS読み込み -->
 
@@ -111,6 +111,15 @@
 
 					<div class="box">
 						<form action="mail.php" method="post">
+							<div class="item radio_item">
+								<div class="inner"><label>お問い合わせ種別<span>必須</span></label></div>
+								<div class="inner">
+									<label><input type="radio" name="contact_type" id="contact_type01" value="ご予約" checked><span>ご予約</span></label>
+									<label><input type="radio" name="contact_type" id="contact_type02" value="お問い合わせ" ><span>お問い合わせ</span></label>
+									<label><input type="radio" name="contact_type" id="contact_type03" value="取材" ><span>取材</span></label>
+									<label><input type="radio" name="contact_type" id="contact_type04" value="その他" ><span>その他</span></label>
+								</div>
+							</div>
 							<div class="item">
 								<div class="inner"><label for="name">お名前 / 担当者名<span>必須</span></label></div>
 								<div class="inner"><input name="name" type="text" id="name" required placeholder="お名前をご入力ください"></div>
@@ -126,15 +135,6 @@
 							<div class="item">
 								<div class="inner"><label for="tel">電話番号<span>必須</span></label></div>
 								<div class="inner"><input name="tel" type="tel" id="tel" required placeholder="お電話番号をご入力ください"></div>
-							</div>
-							<div class="item radio_item">
-								<div class="inner"><label>お問い合わせ種別<span>必須</span></label></div>
-								<div class="inner">
-									<label><input type="radio" name="contact_type" id="contact_type01" checked><span>ご予約</span></label>
-									<label><input type="radio" name="contact_type" id="contact_type02"><span>お問い合わせ</span></label>
-									<label><input type="radio" name="contact_type" id="contact_type03"><span>取材</span></label>
-									<label><input type="radio" name="contact_type" id="contact_type04"><span>その他</span></label>
-								</div>
 							</div>
 							<div class="item textarea_item">
 								<div class="inner"><label for="msg">お問い合わせ内容<span>必須</span></label></div>
@@ -185,7 +185,7 @@
 	<script type="text/javascript" src="./js/jquery.inview.min.js" defer></script>
 	<script src="./js/ofi.min.js" defer></script>
 	<script src="./js/picturefill.min.js" defer></script>
-	<script type="text/javascript" src="./js/myscript.js" defer></script>
+	<script type="text/javascript" src="./js/myscript.js?20201211" defer></script>
 	<!-- JS読み込み -->
 </body>
 

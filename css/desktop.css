@@ -174,7 +174,7 @@ video{ width: 100%; }
 }
 .btn.line .inner{
 	color: #fff;
-	background: var(--line);
+	background: #00B900;
 }
 .btn:hover .inner{
 	background: #ededf8;
@@ -466,6 +466,7 @@ footer .copyright{
 	width: 40%;
 }
 .top03 .item .txt .icon{
+	position: relative;
 	width: 7.75rem;
 	height: 7.75rem;
 	border-radius: 50%;
@@ -744,7 +745,7 @@ footer .copyright{
 	height: 3.75rem;
 }
 .contact_contents .btn_wrap .btn.line .inner{
-	color: var(--line);
+	color: #00B900;
 	background: #fff;
 }
 .contact_contents .btn_wrap .btn.line:hover .inner{
@@ -838,6 +839,7 @@ footer .copyright{
 .service02 .item:nth-of-type(odd) .txt{ order: 2; }
 .service02 .item:nth-of-type(even) .txt{ order: 1; }
 .service02 .item .txt .icon{
+	position: relative;
 	width: 7.75rem;
 	height: 7.75rem;
 	border-radius: 50%;
@@ -1346,7 +1348,7 @@ footer .copyright{
 	margin: 3rem auto 0;
 }
 .contact02 .privacypolicy a{
-	margin-top: 1rem;
+	margin: 1rem 0 1.5rem;
 	text-decoration: underline;
 	transition: .3s;
 }
@@ -1356,7 +1358,6 @@ footer .copyright{
 }
 .contact02 .privacypolicy .notice{
 	display: inline-block;
-	margin-top: 1.5rem;
 	text-align: left;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
