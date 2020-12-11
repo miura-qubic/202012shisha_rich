@@ -879,17 +879,102 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ faq02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ contact02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.contact02{
+	padding: 2.5rem 0 4rem;
+}
+.contact02 .copy p{
+	color: #5351c0;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 2.4;
+}
+.contact02 .box{
+	margin-top: 2.5rem;
+}
+.contact02 .box .item{
+	border-bottom: solid 1px #9e9f9f;
+	padding: 1rem 0 1.5rem;
+}
+.contact02 .box .item:first-of-type{
+	border-top: solid 1px #9e9f9f;
+}
+.contact02 .item .inner:first-of-type label{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.25rem;
+}
+.contact02 .box .item.radio_item .inner:nth-of-type(2) label{
+	display: block;
+}
+.contact02 .item .inner:first-of-type label span{
+	font-size: 0.75rem;
+	color: #f52100;
+	margin-left: 1rem;
+}
+.contact02 .item .inner:nth-of-type(2) label span{
+	margin-left: 0.25rem;
+}
+.contact02 .item .inner input[type="text"],
+.contact02 .item .inner input[type="email"],
+.contact02 .item .inner input[type="tel"],
+.contact02 .item .inner textarea{
+	font-size: 16px;
+	border: solid 1px #9e9f9f;
+	border-radius: 0.6rem;
+	padding: 0.75rem 1rem;
+	width: 100%;
+	transition: background .2s ease, border-color .2s ease;
+}
+.contact02 .item .inner input:focus,
+.contact02 .item .inner textarea:focus{
+	background: #f5f4fc;
+	border-color: #5351c0;
+}
+.contact02 .submit{
+	margin-top: 3rem;
+	text-align: center;
+}
+.contact02 .submit input{
+	width: 100%;
+	max-width: 17.5rem;
+	height: 3.5rem;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 1rem;
+	color: #fff;
+	background: #5351c0;
+	border: solid 3px #5351c0;
+}
+.contact02 .privacypolicy{
+	font-size: 0.875rem;
+	text-align: center;
+	margin: 2rem auto 0;
+}
+.contact02 .privacypolicy a{
+	margin-top: 0.5rem;
+	text-decoration: underline;
+}
+.contact02 .privacypolicy .notice{
+	display: inline-block;
+	margin-top: 1.5rem;
+	text-align: left;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.privacypolicy01{
+	padding: 2.5rem 0 3rem;
+}
 .privacypolicy01 .box{
 	margin: 0 auto;
 }
-.privacypolicy01 .box h1{
+.privacypolicy01 .box h2{
 	font-size: 1.5rem;
 	text-align: center;
 	margin: 0 0 2rem;
 }
-.privacypolicy01 .box h2{
+.privacypolicy01 .box h3{
 	font-size: 1.1rem;
 	margin: 2.5rem 0 1rem;
 }
