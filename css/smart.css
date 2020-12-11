@@ -94,7 +94,10 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.montserrat{ font-family: 'Montserrat', sans-serif; }
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
 .grd01{ background: linear-gradient(-45deg, #5351c0, #b54d6e, #f54c31); }
 video{ width: 100%; }
 .ttl_wrap{
@@ -707,6 +710,8 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層MV ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .service01{ background: url(../images/service/mv.png) 80% center / cover no-repeat; }
+.price01{ background: url(../images/price/mv.png) 80% center / cover no-repeat; }
+.flow01{ background: url(../images/flow/mv.png) 80% center / cover no-repeat; }
 .faq01{ background: url(../images/faq/mv.png) 80% center / cover no-repeat; }
 .contact01{ background: url(../images/contact/mv.png) 80% center / cover no-repeat; }
 .privacypolicy01{ background: url(../images/contact/mv.png) 80% center / cover no-repeat; }
@@ -825,6 +830,127 @@ footer .copyright{
 	text-indent: -1em;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ flow02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.flow02{
+	padding: 2.5rem 0 4rem;
+}
+.flow02 .copy p{
+	color: #5351c0;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 2.4;
+}
+.flow02 .box{
+	margin-top: 2.5rem;
+}
+.flow02 .item{
+	position: relative;
+	background: #fff;
+	border-radius: 0.6rem;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	padding: 0.25rem;
+	margin-top: 2rem;
+}
+.flow02 .item:first-of-type{
+	margin-top: 0;
+}
+.flow02 .item::after{
+	position: absolute;
+	content: '';
+	background: url(../images/common/angle.svg) center center / cover no-repeat;
+	width: 3.75rem;
+	height: 3.75rem;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-0.75rem) rotate(90deg);
+	z-index: 2;
+}
+.flow02 .item:last-of-type::after{
+	content: none;
+}
+.flow02 .item .item_in{
+	background: linear-gradient(-45deg, rgba(83,81,192,.1), rgba(181,77,110,.1), rgba(245,76,49,.1));
+	border-radius: 0.6rem;
+	padding: 1.5rem;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.flow02 .step_ttl{
+	text-align: center;
+	color: #5351c0;
+}
+.flow02 .step_ttl p{
+	position: relative;
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+.flow02 .step_ttl p::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2.5rem;
+	height: 2px;
+	background: #5351c0;
+}
+.flow02 .step_ttl h2{
+	font-size: 1rem;
+}
+.flow02 .item_in .img{
+	width: auto;
+	height: 6rem;
+	margin: 1rem 0;
+}
+.flow02 .item_in .img img{
+	width: auto;
+	height: 6rem;
+}
+.flow02 .item_in .txt p{
+	font-size: 0.875rem;
+	text-align: left;
+}
+.flow02 .item_in .txt p a{
+	display: inline;
+	text-decoration: underline;
+}
+.flow02 .btn_wrap .btn{
+	margin-top: 1.5rem;
+}
+.flow02 .btn_wrap .btn:first-of-type{
+	margin-top: 0;
+}
+.flow02 .btn_wrap .btn.line .fig{
+	display: inline-block;
+	position: relative;
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	transition: .2s ease;
+	margin-bottom: 1rem;
+}
+.flow02 .btn_wrap .btn.line .fig::before,
+.flow02 .btn_wrap .btn.line .fig::after{
+	position: absolute;
+	content: '';
+	width: 2rem;
+	height: 2px;
+	top: 50%;
+}
+.flow02 .btn_wrap .btn.line .fig::before{
+	background: #f52100;
+	left: -4rem;
+	transform: translateY(-50%) rotate(45deg);
+}
+.flow02 .btn_wrap .btn.line .fig::after{
+	background: #5351c0;
+	right: -4rem;
+	transform: translateY(-50%) rotate(-45deg);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ faq02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ faq02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .faq02{
