@@ -95,24 +95,6 @@ section,
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .montserrat{ font-family: 'Montserrat', sans-serif; }
-#overlay{
-	opacity: 0;
-	visibility: hidden;
-	position: fixed;
-	top: 0;
-	right: -100%;
-	width: 100%;
-	height: 100vh;
-	min-height: 568px;
-	background: rgba(0,0,0,.75);
-	z-index: 49999;
-	transition: .3s;
-}
-#overlay.active{
-	right: 0;
-	opacity: 1;
-	visibility: visible;
-}
 .grd01{ background: linear-gradient(-45deg, #5351c0, #b54d6e, #f54c31); }
 video{ width: 100%; }
 .ttl_wrap{
@@ -236,6 +218,21 @@ header .logo img{
 .header_in nav.active{
 	right: 16%;
 }
+.header_in nav::before{
+	position: fixed;
+	content: '';
+	top: 0;
+	right: -100%;
+	width: 16%;
+	height: 100vh;
+	min-height: 568px;
+	background: rgba(0,0,0,.75);
+	z-index: 49999;
+	transition: .3s;
+}
+.header_in nav.active::before{
+	right: 0;
+}
 .header_in nav ul li a{
 	font-size: 1.5rem;
 	line-height: 1.2;
@@ -265,6 +262,9 @@ header .logo img{
 	width: 40%;
 	height: 2px;
 	transition: .3s;
+}
+.menu_open.active span{
+	background: #fff;
 }
 .menu_open span:nth-of-type(1){transform:translate(-50%,-50%) translateY(6px);}
 .menu_open span:nth-of-type(2){transform:translate(-50%,-50%);}
@@ -691,16 +691,16 @@ footer .copyright{
 	display: flex;
 	align-items: center;
 }
-.lower_mv .lower_ttl{
+.lower_mv .lower_ttl_wrap{
 	color: #fff;
 }
-.lower_mv .lower_ttl h1{
+.lower_mv .lower_ttl_wrap .lower_ttl{
 	font-size: 2rem;
 	line-height: 1;
 	font-weight: 500;
 	margin-bottom: 0.25rem;
 }
-.lower_mv .lower_ttl p{
+.lower_mv .lower_ttl_wrap p{
 	font-size: 0.9rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
@@ -709,6 +709,7 @@ footer .copyright{
 .service01{ background: url(../images/service/mv.png) 80% center / cover no-repeat; }
 .faq01{ background: url(../images/faq/mv.png) 80% center / cover no-repeat; }
 .contact01{ background: url(../images/contact/mv.png) 80% center / cover no-repeat; }
+.privacypolicy01{ background: url(../images/contact/mv.png) 80% center / cover no-repeat; }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層MV ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ service02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -962,48 +963,74 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ contact02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.privacypolicy01{
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.thanks01{
 	padding: 2.5rem 0 3rem;
 }
-.privacypolicy01 .box{
+.thanks01 .box{
+	text-align: center;
+}
+.thanks01 .box h1{
+	color: #5351c0;
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-align: center;
+	line-height: 2.4;
+}
+.thanks01 .box .copy{
+	margin-top: 1.5rem;
+}
+.thanks01 .box .copy p{
+	font-size: 0.875rem;
+	line-height: 2.4;
+}
+.thanks01 .box .copy p + p{
+	margin-top: 1.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ privacypolicy02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.privacypolicy02{
+	padding: 2.5rem 0 3rem;
+}
+.privacypolicy02 .box{
 	margin: 0 auto;
 }
-.privacypolicy01 .box h2{
+.privacypolicy02 .box h2{
 	font-size: 1.5rem;
 	text-align: center;
 	margin: 0 0 2rem;
 }
-.privacypolicy01 .box h3{
+.privacypolicy02 .box h3{
 	font-size: 1.1rem;
 	margin: 2.5rem 0 1rem;
 }
-.privacypolicy01 .box ol{
+.privacypolicy02 .box ol{
 	margin: 1rem 0 1rem 1rem;
 }
-.privacypolicy01 .box ol li{
+.privacypolicy02 .box ol li{
 	list-style: decimal;
 	margin: 0.5rem 0;
 }
-.privacypolicy01 .box ul{
+.privacypolicy02 .box ul{
 	margin: 1rem 0 1rem 1rem;
 }
-.privacypolicy01 .box ul li{
+.privacypolicy02 .box ul li{
 	list-style: disc;
 }
-.privacypolicy01 .box ul li ol{
+.privacypolicy02 .box ul li ol{
 	margin: 0rem 0 1.5rem 1rem;
 }
-.privacypolicy01 .box ul li ol li{
+.privacypolicy02 .box ul li ol li{
 	list-style: decimal;
 }
-.privacypolicy01 .box p{
+.privacypolicy02 .box p{
 	margin: 0.5rem 0;
 }
-.privacypolicy01 .box .right{
+.privacypolicy02 .box .right{
 	text-align: right;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ プライバシーポリシー01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ privacypolicy02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 @media screen and (orientation:portrait) {/* 縦向き */}
 @media screen and (orientation:landscape) {/* 横向き */}
