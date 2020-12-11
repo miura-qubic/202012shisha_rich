@@ -111,7 +111,7 @@
 
 					<div class="box">
 						<div class="box_in">
-							<div class="item fadein">
+							<div class="item item01 fadein">
 								<h4>専属スタッフ1名</h4>
 								<div class="txt">
 									<div class="inner">
@@ -122,21 +122,28 @@
 										<p>2台<span class="price">15,000円</span></p>
 										<p>宅飲み、キャンプ、バーベキューなどの<br class="is_hidden_tab">小規模イベント向け</p>
 									</div>
-									<div class="img_wrap">
-										<div class="img">
-											<img class="objectCover" src="./images/price/price02_img01.jpg" alt="">
-										</div>
-										<div class="img">
-											<img class="objectCover" src="./images/price/price02_img02.jpg" alt="">
-										</div>
-										<div class="img">
-											<img class="objectCover" src="./images/price/price02_img03.jpg" alt="">
+								</div>
+								<div class="slider">
+									<div class="swiper-container">
+										<div class="swiper-wrapper img_wrap">
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img01.jpg" alt="">
+											</div>
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img02.jpg" alt="">
+											</div>
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img03.jpg" alt="">
+											</div>
 										</div>
 									</div>
+									<div class="swiper-pagination is_sp"></div>
+									<div class="swiper-button-prev is_sp"><i class="far fa-angle-left"></i></div>
+									<div class="swiper-button-next is_sp"><i class="far fa-angle-right"></i></div>		
 								</div>
 							</div>
 
-							<div class="item fadein">
+							<div class="item item02 fadein">
 								<h4>専属スタッフ2名</h4>
 								<div class="txt">
 									<div class="inner">
@@ -147,21 +154,28 @@
 										<p>4台<span class="price">30,000円</span></p>
 										<p>バースデイパーティー、サークルイベントなどの<br class="is_hidden_tab">中規模イベント向け</p>
 									</div>
-									<div class="img_wrap">
-										<div class="img">
-											<img class="objectCover" src="./images/price/price02_img04.jpg" alt="">
-										</div>
-										<div class="img">
-											<img class="objectCover" src="./images/price/price02_img05.jpg" alt="">
-										</div>
-										<div class="img">
-											<img class="objectCover" src="./images/price/price02_img06.jpg" alt="">
+								</div>
+								<div class="slider">
+									<div class="swiper-container">
+										<div class="swiper-wrapper img_wrap">
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img04.jpg" alt="">
+											</div>
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img05.jpg" alt="">
+											</div>
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img06.jpg" alt="">
+											</div>
 										</div>
 									</div>
+									<div class="swiper-pagination is_sp"></div>
+									<div class="swiper-button-prev is_sp"><i class="far fa-angle-left"></i></div>
+									<div class="swiper-button-next is_sp"><i class="far fa-angle-right"></i></div>		
 								</div>
 							</div>
 
-							<div class="item fadein">
+							<div class="item item03 fadein">
 								<h4>専属スタッフ3名</h4>
 								<div class="txt">
 									<div class="inner">
@@ -173,16 +187,23 @@
 										<p>クラブイベント、野外フェスなどの<br class="is_hidden_tab">大規模イベント向け</p>
 									</div>
 								</div>
-								<div class="img_wrap">
-									<div class="img">
-										<img class="objectCover" src="./images/price/price02_img07.jpg" alt="">
+								<div class="slider">
+									<div class="swiper-container">
+										<div class="swiper-wrapper img_wrap">
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img07.jpg" alt="">
+											</div>
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img08.jpg" alt="">
+											</div>
+											<div class="swiper-slide img">
+												<img src="./images/price/price02_img09.jpg" alt="">
+											</div>
+										</div>
 									</div>
-									<div class="img">
-										<img class="objectCover" src="./images/price/price02_img08.jpg" alt="">
-									</div>
-									<div class="img">
-										<img class="objectCover" src="./images/price/price02_img09.jpg" alt="">
-									</div>
+									<div class="swiper-pagination is_sp"></div>
+									<div class="swiper-button-prev is_sp"><i class="far fa-angle-left"></i></div>
+									<div class="swiper-button-next is_sp"><i class="far fa-angle-right"></i></div>		
 								</div>
 							</div>
 						</div>
@@ -284,6 +305,96 @@
 			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
 		</footer>
 	</div>
+
+	<script>
+		window.onload = function () {
+			var w = $(window).width();
+			if (w <= 767) {
+				var swiper01 = new Swiper('.price02 .item01 .swiper-container', {
+					loop: true,
+					speed: 1000,
+					slidesPerView: 1,
+					spaceBetween: 20,
+					centeredSlides: true,
+					autoplay: {
+						delay: 8000,
+						disableOnInteraction: true
+					},
+					pagination: {
+						el: '.price02 .item01 .swiper-pagination',
+						type: 'bullets',
+						clickable: true
+					},
+					navigation: {
+						nextEl: '.price02 .item01 .swiper-button-next',
+						prevEl: '.price02 .item01 .swiper-button-prev',
+					}
+				});
+			}else{
+				if (swiper01) {
+					swiper01.destroy();
+					swiper01 = undefined;
+				}
+			}
+
+			if (w <= 767) {
+				var swiper01 = new Swiper('.price02 .item02 .swiper-container', {
+					loop: true,
+					speed: 1000,
+					slidesPerView: 1,
+					spaceBetween: 20,
+					centeredSlides: true,
+					autoplay: {
+						delay: 8000,
+						disableOnInteraction: true
+					},
+					pagination: {
+						el: '.price02 .item02 .swiper-pagination',
+						type: 'bullets',
+						clickable: true
+					},
+					navigation: {
+						nextEl: '.price02 .item02 .swiper-button-next',
+						prevEl: '.price02 .item02 .swiper-button-prev',
+					}
+				});
+			}else{
+				if (swiper01) {
+					swiper01.destroy();
+					swiper01 = undefined;
+				}
+			}
+
+			if (w <= 767) {
+				var swiper01 = new Swiper('.price02 .item03 .swiper-container', {
+					loop: true,
+					speed: 1000,
+					slidesPerView: 1,
+					spaceBetween: 20,
+					centeredSlides: true,
+					autoplay: {
+						delay: 8000,
+						disableOnInteraction: true
+					},
+					pagination: {
+						el: '.price02 .item03 .swiper-pagination',
+						type: 'bullets',
+						clickable: true
+					},
+					navigation: {
+						nextEl: '.price02 .item03 .swiper-button-next',
+						prevEl: '.price02 .item03 .swiper-button-prev',
+					}
+				});
+			}else{
+				if (swiper01) {
+					swiper01.destroy();
+					swiper01 = undefined;
+				}
+			}
+
+		}
+	</script>
 
 
 	<!-- JS読み込み -->

@@ -974,6 +974,10 @@ footer .copyright{
 	margin-left: 1rem;
 	color: #f53618;
 }
+.price02 .swiper-button-prev,
+.price02 .swiper-button-next{
+	display: none;
+}
 .price02 .box_in .item .img_wrap{
 	display: flex;
 	align-items: center;
@@ -982,7 +986,6 @@ footer .copyright{
 }
 .price02 .box_in .item .img_wrap .img{
 	width: 33.33%;
-	height: 15rem;
 }
 .price02 .box_in .item .img_wrap .img:last-of-type{
 	margin-right: 0;

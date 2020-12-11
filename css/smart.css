@@ -831,6 +831,124 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ service02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ price02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.price02{
+	padding: 2.5rem 0 4rem;
+}
+.price02 .copy p{
+	color: #5351c0;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 2.4;
+}
+.price02 .box{
+	margin-top: 2.5rem;
+}
+.price02 .box_in .item{
+	background: #fff;
+	border-radius: 0.6rem;
+	margin-bottom: 2rem;
+}
+.price02 .box_in .item:last-of-type{
+	margin-bottom: 0;
+}
+.price02 .box_in .item h4{
+	font-size: 1.125rem;
+	color: #fff;
+	background: #82b6ef;
+	text-align: center;
+	padding: 0.5rem;
+	border-top-left-radius: 0.6rem;
+	border-top-right-radius: 0.6rem;
+}
+.price02 .box_in .item .txt{
+	padding: 2rem 1.5rem;
+	text-align: center;
+}
+.price02 .box_in .item .txt .inner{
+	margin-top: 1.5rem;
+}
+.price02 .box_in .item .txt .inner:first-of-type{
+	margin-top: 0;
+}
+.price02 .box_in .item .txt p{
+	font-size: 0.875rem;
+}
+.price02 .box_in .item .txt p .price{
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-left: 1rem;
+	color: #f53618;
+}
+.price02 .box_in .item .slider{
+	position: relative;
+}
+.price02 .box_in .item .swiper-pagination{
+	bottom: 1rem;
+}
+.price02 .box .notice{
+	margin-top: 1rem;
+}
+.price02 .box .notice p{
+	font-size: 0.875rem;
+	line-height: 1.8;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.price02 .btn_wrap .btn{
+	margin-top: 1.5rem;
+}
+.price02 .btn_wrap .btn:first-of-type{
+	margin-top: 0;
+}
+.price02 .btn_wrap .btn.line .fig{
+	display: inline-block;
+	position: relative;
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	transition: .2s ease;
+	margin-bottom: 1rem;
+}
+.price02 .btn_wrap .btn.line .fig::before,
+.price02 .btn_wrap .btn.line .fig::after{
+	position: absolute;
+	content: '';
+	width: 2rem;
+	height: 2px;
+	top: 50%;
+}
+.price02 .btn_wrap .btn.line .fig::before{
+	background: #f52100;
+	left: -4rem;
+	transform: translateY(-50%) rotate(45deg);
+}
+.price02 .btn_wrap .btn.line .fig::after{
+	background: #5351c0;
+	right: -4rem;
+	transform: translateY(-50%) rotate(-45deg);
+}
+.price02 .notice_wrap{
+	margin-top: 2rem;
+}
+.price02 .notice_wrap .notice_ttl,
+.price02 .notice_wrap .notice_contents{
+	padding: 0.5rem 0;
+}
+.price02 .notice_wrap .notice_ttl{
+	border-bottom: solid 1px #000;
+}
+.price02 .notice_wrap .notice_ttl h3{
+	font-size: 1.125rem;
+}
+.price02 .notice_wrap .notice_contents p{
+	font-size: 0.875rem;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ price02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ flow02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .flow02{
 	padding: 2.5rem 0 4rem;
